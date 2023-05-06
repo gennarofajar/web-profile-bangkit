@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    width: 100%;
+    background-color: #BC8962;
+    padding-block: 0.5rem;
+    z-index: 999; /* agar selalu di lapisan teratas */
+    top: 0;
+    
+}
+
+header.navbar-container .nav-box {
+    max-width: 1200px;
+    margin-inline: auto;
+    justify-content: space-around;
+    display: flex;
+    gap: 2rem;
+}
+
+header.navbar-container .logo img {
+    max-width: 80px;
+    justify-content: flex-start;
+}
+
+
+header.navbar-container .navigation ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2.5rem 3rem;
+    
+}
+
+header.navbar-container .navigation li{
+    list-style-type: none;
+}
+
+header.navbar-container .navigation li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 1000px; 
+    transition: all .2s ease-in-out;
+}
+
+header.navbar-container .navigation li:hover a{
+    background-color: #F0EDEA;
+    color: #BC8962;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+main .content{
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    gap: 10rem;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+main .content .intro {
+    width: 100%;
+    gap: 1rem;
+    margin-inline: auto;
+    max-width: 90%;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    /* display: flex;    */
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.foto {
+    background-color: #FFF8EA;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.deskripsi {
+    padding: 2rem;
+    text-align: center;
+    max-width: 70%;
+}
+
+.section{
+    text-align: center;
+}
+
+#education-content {
+    display: flex;
+    gap: 3rem;
+    
+}
+
+.education-item{
+    padding: 1rem;
+    border: 2px #BC8962 solid;
+    border-radius: 10%;
+    background-color: #EED9B7;
+}
+
+.education-item img {
+    width: 150px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #BC8962;
+    padding-block: 0.5rem;
+    justify-content: center;
+    display: flex;
+}
+
+.social-media ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2.5rem 3rem;
+}
+
+.social-media li{
+    list-style-type: none;
+}
+
+.social-media li a{
+    font-size: 2rem;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+    }
+
+    header.navbar-container .navigation ul {
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+
+    header.navbar-container .logo {
+        display: none;
+    }
+
+    main {
+        padding: 1rem 3rem;
+    }
+
+    main .content {
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .content .intro {
+        font-size: 1rem;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .deskripsi {
+        padding: 3rem;
+        width: 100%;
+    }
+
+    #education-content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    header.navbar-container .navigation ul{
+        justify-content: center;
+    }
+    header.navbar-container .navigation li a {
+        font-size: 1rem;
+    }
+    .deskripsi{
+        padding: 0rem;
+    }
+}
