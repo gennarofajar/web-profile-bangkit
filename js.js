@@ -1,17 +1,17 @@
 const education = {
     content:[{
         nama: "SMAK Penabur Summarecon Bekasi",
-        gambar:"gambar/penabur.png",
+        gambar:"https://storage.cloud.google.com/genfamen-submission-dicoding1/penabur.png",
         deskripsi: "2017-2020"
     },
     {
         nama: "sepuluh Nopember Institute of Technology",
-        gambar:"gambar/ITS.png",
+        gambar:"https://storage.cloud.google.com/genfamen-submission-dicoding1/ITS.png",
         deskripsi: "2020-NOW"
     },
     {
         nama: "Bangkit Program 2023",
-        gambar:"gambar/bangkit.png",
+        gambar:"https://storage.cloud.google.com/genfamen-submission-dicoding1/bangkit.png",
         deskripsi: "2023-NOW"
     }
 ]
